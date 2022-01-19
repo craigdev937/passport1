@@ -1,6 +1,28 @@
 <h1>Register</h1>
-
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate numquam rerum aut quia eligendi pariatur voluptatibus nam est minus! Ipsam quidem perferendis est quis perspiciatis alias aut voluptate omnis optio!</p>
-
+<main>
+    <form action="/users/register" method="post">
+        <aside>
+            <label for="name">Name</label>
+            <input type="text" name="name" value="{{name}}" 
+                class="form-control" required>
+        </aside>
+        <aside>
+            <label for="email">Email</label>
+            <input type="email" name="email" value="{{email}}" 
+                class="form-control" required>
+        </aside>
+        <aside>
+            <label for="password">Password</label>
+            <input type="password" name="password" value="{{password}}" 
+                class="form-control" required>
+        </aside>
+        <aside>
+            <label for="password2">Confirm Password</label>
+            <input type="password2" name="password2" value="{{password2}}" 
+                class="form-control" required>
+        </aside>
+        <button type="submit">Submit</button>
+    </form>
+</main>
 
 
